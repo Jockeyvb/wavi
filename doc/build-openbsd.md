@@ -93,6 +93,7 @@ tar -xzf db-4.8.30.NC.tar.gz
 cd db-4.8.30.NC/build_unix/
 #  Note: Do a static build so that it can be embedded into the executable, instead of having to find a .so at runtime
 ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX CC=egcc CXX=eg++ CPP=ecpp
+../dist/configure --prefix=/opt/Berkeley 
 make install
 ```
 
